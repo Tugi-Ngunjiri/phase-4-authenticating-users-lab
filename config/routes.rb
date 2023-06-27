@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 post '/login:id' => 'posts#login', as:login
 delete '/logout'   =>'sessions#delete',as:'logout'
 resources :users
+get "/signup"  => "users#new", as:"user_path"
 
 end
