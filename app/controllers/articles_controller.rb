@@ -15,6 +15,20 @@ class ArticlesController < ApplicationController
 
   def record_not_found
     render json: { error: "Article not found" }, status: :not_found
+
+    def Post
+    end
+
+    def delete
+    end
+    #render json: @post, serializer: PostSerializer
+
+
+
+
+
+
+
   end
 
 end
